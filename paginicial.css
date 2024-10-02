@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.questrial-regular {
+    font-family: "Questrial", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+*{
+    margin: 0;
+}
+h1{
+    font-size: 30pt;
+    font-family: "Patrick Hand", cursive;
+}
+h2{
+    font-size: 12pt;
+    background-color: white;
+    color: #ff004d;
+    width: 100%;
+}
+nav{
+    background-color: #ff004d;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    box-sizing: border-box;
+}
+nav img{
+    width: 40px;
+}
