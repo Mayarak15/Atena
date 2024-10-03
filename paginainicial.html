@@ -12,17 +12,23 @@
             <h1>Atena</h1>
             <h2>Qual área você está com dúvida hoje?</h2>
         </div>
-        <img src="/imagens/cardapio.png" alt="menu">
+        <div>
+        <img src="/imagens/cardapio.png" alt="menu"  id="img_menu"  onclick="menu()">
+        <img src="/imagens/x.png" alt="menu" style="display: none;" id="fechar"  onclick="menufechar()">
+    </div>
     </nav>
 
+    <div id="menuhamburguer" style="display: none;">
+
+    </div>
     <div id="conteudo">
 
         <div id="humanas">
-<img src="/imagens/humano.png" alt=""> <p>Ciências humanas</p>
+<img src="/imagens/humano.png" alt=""> <p>Ciências <br>humanas</p>
         </div>
 
         <div id="natureza">
-            <img src="/imagens/natureza.png" alt=""> <p>Ciências da natureza</p>
+            <img src="/imagens/natureza.png" alt=""> <p>Ciências da <br> natureza</p>
         </div>
 
         <div id="linguagens">
@@ -38,9 +44,12 @@
         </div>
 
     </div>
-
     <div id="menu">
-
+        <img src="/imagens/conversando.png" alt="">
+        <img src="/imagens/usuario-de-perfil.png" alt="">
+        <img src="/imagens/lupa.png" alt="">
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
