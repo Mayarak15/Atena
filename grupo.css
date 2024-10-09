@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.questrial-regular {
+    font-family: "Questrial", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+*{
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 20%;
+    font-family: "Questrial", system-ui;
+}
+#codigogrupo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15pt;
+    text-transform: uppercase;
+}
+#codigogrupo div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#codigogrupo input{
+    border-radius: 20px 0 0 20px;
+    border: 2px solid grey;
+    padding: 15px 20px 15px 20px;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+}
+#codigogrupo button{
+    background-color: #F7681C;
+    padding: 17px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    color: white;
+}
+#btn_criargrupo{
+    background-color: #F7681C;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+}
+#gruposabertos{
+    text-transform: uppercase;
+    font-size: 15pt;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#miniaturagrupoaberto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#miniaturagrupoaberto div{
+    width: 33%;
+    height: 130px;
+    background-color: rgb(177, 177, 177);
+    border-radius: 6px 6px 0 0;
+}
+#voltar{
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+}

@@ -16,13 +16,9 @@
     margin: 0;
 }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    gap: 20px;
+    box-sizing: border-box;
 }
 h1{
     font-size: 30pt;
@@ -43,69 +39,253 @@ nav{
     justify-content: space-between;
     padding: 8px;
     box-sizing: border-box;
+    position: fixed;
+    top: 0;
 }
 nav img{
     width: 40px;
 }
-#conteudo img{
-    width: 50px;
-}
 #conteudo{
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
-    height: 50%;
-    background-color: aliceblue;
+
 }
-#humanas, #natureza, #linguagens, #matematica, #tecnologia{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    background-color: #ff004d;
-    border-radius: 8px;
+#conteudo img, #menu img{
+    width: 50px;
+}
+#natureza, #humanas, #linguagens, #matematica, #tecnologia{
+    width: 60%;
     padding: 10px;
     box-sizing: border-box;
-    color: white;
-    font-family:  "Questrial", system-ui;
-    text-align: start;
-    font-size: 15pt;
-}
-#menu{
-    background-color: #ff004d;
+    border-radius: 8px;
     display: flex;
-    width: 100%;
-    border-radius: 50px 50px 0 0;
     justify-content: space-evenly;
     align-items: center;
-    padding: 8px;
-    box-sizing: border-box;
-}
-#menu img{
-    width: 50px;
+    text-align: left;
+    color: white;
+    font-family: "Questrial", system-ui;
 }
 #humanas{
     background-color: #02a79d;
 }
 #natureza{
-    background-color: #f7681c;
+    background-color: #F7681C;
 }
 #linguagens{
-    background-color: #01b4e2;
+    background-color: #01B4E2;
 }
 #matematica{
-    background-color: #fccc14;
+    background-color: #FCCC14;
 }
 #tecnologia{
-    background-color: #8a499d;
+    background-color: #8A499D;
 }
-#menuhamburguer{
-    position: absolute;
+#menu{
+    width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ff004d;
+    position: fixed;
+    bottom: 0;
+    border-radius: 80px 80px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#fecharmenu{
+    display: none;
+}
+#opc_menu{
+    width: 100vw;
+    height: 90%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    top: 11%;
+    right: -100%;
+    transition: .5s ;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+#opc_menu img{
+    width: 30px;
+}
+#usuariomenu img{
+    width: 60px;
+}
+#usuariomenu{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20pt;
+    font-family: "Questrial", system-ui;
+}
+#org{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+#config, #ajuda, #conta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 14pt;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: "Questrial", system-ui;
+}
+#config{
+    background-color: #8A499D;
+    border-radius: 20px 0 0 0;
+    color: white;
+}
+#ajuda{
+    background-color: #FCCC14;
+    color: white;
+}
+#conta{
+    background-color: #01B4E2;
+    border-radius: 0 0 0 20px;
+    color: white;
+}
+#desconectar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    color: #ff004d;
+    font-family: "Questrial", system-ui;
+    font-size: 12pt;
+}
+#desconectar img{
+    width: 40px;
+}
+#menuperfil{
+    position: fixed;
+    bottom: 0;
+    height: 50%;
+    width: 100vw;
+    background-color: #ff004d;
+    z-index: 1;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Questrial", system-ui;
+    font-size: 18pt;
+    color: white;
+    bottom: -100%;
+    transition: .5s ease-in-out;
+}
+#perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#perfil img{
+    width: 60px;
+}
+#alternarusu{
+    background-color: #02a79d;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+    padding: 30px;
+}
+#alternarimg{
+    background-color: #FCCC14;
+    box-sizing: border-box;
+    padding: 30px;
+}
+#alternarcont{
+    background-color: #01B4E2;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+#line_menuperfil{
+    background-color: white;
+    height: 6px;
+    width: 40%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+#definirtema{
+    background-color: white;
     width: 100%;
     height: 90%;
+    position: fixed;
+    bottom: -100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    gap: 80px;
+    font-family: "Questrial", system-ui;
+    transition: .5s ease-in-out;
+}
+#definirtema p{
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+#definirtema img{
+    width: 40%;
+}
+#definirtema h1{
+    font-size: 30pt;
+    font-family: "Questrial", system-ui;
+    text-transform: uppercase;
+    color: #02a79d;
+
+}
+#conteudotemas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
     background-color: #02a79d;
-    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50px 50px 0 0;
+    gap: 20px;
+}
+#conteudotemas input{
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(223, 221, 221);
+    text-transform: uppercase;
+}
+.btn_modo{
+    background-color: #F7681C;
+    border: none;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 8px;
+    color: white;
+    font-family: "Questrial", system-ui;
+    text-transform: uppercase;
 }

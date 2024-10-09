@@ -12,42 +12,114 @@
             <h1>Atena</h1>
             <h2>Qual área você está com dúvida hoje?</h2>
         </div>
-        <div>
-        <img src="/imagens/cardapio.png" alt="menu"  id="img_menu"  onclick="menu()">
-        <img src="/imagens/x.png" alt="menu" style="display: none;" id="fechar"  onclick="menufechar()">
-    </div>
+        <img src="./imagens/cardapio.png" alt="menu" onclick="embloco()" id="abrirmenu">
+        <img src="./imagens/x.png" alt="fecharmenu" onclick="invi()" id="fecharmenu">
     </nav>
 
-    <div id="menuhamburguer" style="display: none;">
-
-    </div>
     <div id="conteudo">
 
-        <div id="humanas">
-<img src="/imagens/humano.png" alt=""> <p>Ciências <br>humanas</p>
+        <div id="humanas" onclick="humanas()">
+<img src="./imagens/humano.png" alt="humanas"> <p>Ciências <br> humanas</p>
         </div>
 
-        <div id="natureza">
-            <img src="/imagens/natureza.png" alt=""> <p>Ciências da <br> natureza</p>
+        <div id="natureza" onclick="natureza()">
+            <img src="./imagens/natureza.png" alt=""> <p>Ciências da <br> natureza</p>
         </div>
 
-        <div id="linguagens">
-<img src="/imagens/redacao.png" alt=""> <p>Linguagens</p>
+        <div id="linguagens" onclick="linguagens()">
+<img src="./imagens/redacao.png" alt=""> <p>Linguagens</p>
         </div>
 
-        <div id="matematica">
-<img src="/imagens/matematica.png" alt=""> <p>Matematica</p>
+        <div id="matematica" onclick="matematica()">
+<img src="./imagens/matematica.png" alt=""> <p>Matematica</p>
         </div>
 
-        <div id="tecnologia">
-<img src="/imagens/tecnologia.png" alt=""> <p>Tecnologia</p>
+        <div id="tecnologia" onclick="tecnologia()">
+<img src="./imagens/tecnologia.png" alt=""> <p>Tecnologia</p>
+        </div>
+    </div>
+
+
+<div id="opc_menu">
+
+    <div id="usuariomenu">
+
+    <img src="./imagens/usuario-de-perfil.png" alt="perfil">
+    <p id="nomeusuario">john Doe</p>
+</div>
+
+    <div id="org">
+
+        <div id="config">
+            <p>Configurações</p>
+            <img src="./imagens/gear.png" alt="configuraçoes">
+        </div>
+
+        <div id="ajuda">
+            <p>Ajuda</p>
+            <img src="./imagens/helping.png" alt="ajuda">
+        </div>
+
+        <div id="conta">
+            <p>Privacidade</p>
+            <img src="./imagens/lock.png" alt="ajuda">
         </div>
 
     </div>
+
+
+    <div id="desconectar">
+        <img src="./imagens/disconnect.png" alt="desconectar">
+        <p>Desconectar</p>
+    </div>
+</div>
+
+<div id="menuperfil">
+    <div id="line_menuperfil" onclick="fecharmenuperfil()"></div>
+    <div id="perfil">
+        <img src="./imagens/profile-user.png" alt="">
+        <p id="nomeusuario">John Doe</p>
+    </div>
+
+    <div id="opc_menuperfil">
+
+        <div id="alternarusu">
+            <p>Alternar nome de usuário</p>
+        </div>
+        <div id="alternarimg">
+            <p>Alternar imagem de perfil</p>
+        </div>
+        <div id="alternarcont">
+            <p>Adicionar contatos</p>
+        </div>
+
+    </div>
+</div>
+
+<div id="definirtema">
+
+    <img src="#" id="materiaescolhida_img">
+    <h1 id="materiaescolhida_h1"></h1>
+
+    <div id="conteudotemas">
+
+    <div>
+        <input type="text" placeholder="digite aqui sua dúvida" id="definirtema_inpt">
+        <button style="background-color: #F7681C; border: none; border-radius: 20px; padding: 15px; color: white;">OK</button>
+    </div>
+        <p>escolha uma forma para tirar sua dúvida</p>
+        <button class="btn_modo">bate-papo</button>
+        <button class="btn_modo">chamada</button>
+        <button style="background-color: #02a79d; border: none; color: white;" onclick="voltartema()">Voltar</button>
+    </div>
+    
+</div>
+
     <div id="menu">
-        <img src="/imagens/conversando.png" alt="">
-        <img src="/imagens/usuario-de-perfil.png" alt="">
-        <img src="/imagens/lupa.png" alt="">
+
+        <img src="./imagens/chatting.png" alt="chat" onclick="grupo()">
+        <img src="./imagens/profile-user.png" alt="perfil" onclick="menuperrfil()">
+        <img src="./imagens/search.png" alt="pesquisar">
     </div>
 
     <script src="script.js"></script>
